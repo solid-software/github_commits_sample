@@ -26,7 +26,9 @@ class GithubClient {
       commitsPerPage: commitsPerPage,
     );
 
-    final response = await _client.get(uri);
+    final response = await _client
+        .get(uri)
+        .timeout(Duration(seconds: 5), onTimeout: () => null);
 
     if (response != null && response.statusCode == 200) {
       final List responseBody = jsonDecode(response.body);

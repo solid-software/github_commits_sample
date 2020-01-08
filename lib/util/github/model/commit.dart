@@ -6,7 +6,7 @@ class Commit {
   final String url;
   final int commentCount;
   final String hash;
-  
+
   String get shortHash => hash?.substring(0, 7);
 
   Commit({
@@ -25,7 +25,7 @@ class Commit {
       author: Author.fromJson(commitJson['author'], authorJson['avatar_url']),
       url: commitJson['url'],
       commentCount: commitJson['comment_count'],
-      hash: json['sha']
+      hash: json['sha'],
     );
   }
 }

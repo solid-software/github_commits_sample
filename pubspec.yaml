@@ -12,6 +12,7 @@ dependencies:
   infinite_widgets: ^1.0.1
   provider: ^4.0.1
   clipboard_manager: ^0.0.4
+  cached_network_image: ^2.0.0
 
 
 dev_dependencies:
