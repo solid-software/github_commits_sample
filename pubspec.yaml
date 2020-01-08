@@ -1,0 +1,32 @@
+name: github_commits_sample
+description: Github commits sample app
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  infinite_widgets: ^1.0.1
+  provider: ^4.0.1
+  clipboard_manager: ^0.0.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  pedantic: ^1.8.0+1
+  http: 0.12.0+3
+  test: ^1.9.4
+  mockito: ^4.1.1
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/default_avatar.jpg
